@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="prueba.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <div class="primermenu">
+        <div class="contacto"> 
+            <div class="telefono">55 7396 5552</div>
+            <div class="correo">hola@ruba.com.mx</div>
+
+        </div>
+    </div>
+    <div class="segundomenu">
+<div class="logo">
+    <img src="LogoMava.webp" alt="">
+</div>
+<div class="opciones">
+
+    <a href="#" class="active">inicio</a>
+    <div class="quinta"> 
+    <a href="#">Quintana Roo</a>
+    
+
+
+    <div class="despegable">
+        <div class="uno"><p>Cancun</p></div>
+        <div class="dos"><p>Playa del carmen</p></div>
+    </div>
+</div>
+    <a href="#">veracruz</a>
+    <a href="#">queretaro</a>
+   <button class="primerboton"> Contacto</button>
+</div>
+<i class="fas fa-bars"></i>
+
+    </div>
+
+    <div class="padre">
+        <div class="izq">
+            <div class="container">
+                <div class="arriba">    <h1>Encuentra tu nuevo  <span>hogar </span> cerca del mar</h1></div>
+                <div class="texto"><p>explora propiedades impresionantes hasta encontrar el refugio que se adapte asu estilo de vida</p></div>
+           
+           <div class="botones">
+            <button class="desarrollo">Ver desarrollos</button>
+            <button class="amarrillo">Agendar cita</button>
+           </div>
+            </div>
+        </div>
+        <div class="der">
+            
+            <img src="ims.jpg" alt="">
+            <div class="pause-button-container"> 
+            <button class="pause-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pause">
+                  <rect x="6" y="4" width="4" height="16"></rect>
+                  <rect x="14" y="4" width="4" height="16"></rect>
+                </svg>
+              </button>
+            </div>
+        </div>
+        <div class="absolute">
+            <div class="absolute-hijo">
+                <div class="menu"><img src="LogoMava.webp" alt=""> <button class="x">X</button></div>
+                <div class="kk">
+                    <div class="hijo-kk"> 
+                    <p>Inicio</p>
+                    <div id="options">
+                        <div class="primerhijo"><p class="queretaro">Queretaro</p>
+                        
+                        <p class="item">Item 1</p>
+                        <p class="item">Item 2</p>
+                        </div>
+                        <div class="mas">Quintanaroo</div>
+                        <div class="mas">Veracruz</div>
+                        <button class="ultimo">Contacto</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<script>
+    const configuracion = document.querySelector(".fas.fa-bars")
+    const x = document.querySelector(".x")
+   
+    const absolute = document.querySelector(".absolute")
+    configuracion.addEventListener("click", ()=>{
+        absolute.classList.toggle('show');
+    })
+    x.addEventListener("click", ()=>{
+        absolute.classList.remove("show");
+    })
+</script>
+
+</body>
+</html>
